@@ -1,0 +1,31 @@
+//db.Leser.insertMany(
+{
+    "lnr":1,
+    "name":"Friedrich Funke",
+    "adresse":"Bahnhofstraße 17, 23758 Oldenburg"
+},
+{
+    "lnr":2,
+    "name":"Alicia",
+    "adresse":"Bahnhofstraße 1, 23758 Oldenburg"
+},
+{
+    "lnr":3,
+    "name":"Michael",
+    "adresse":"Bahnhofstraße 27, 23758 Oldenburg"
+},
+{
+    "lnr":4,
+    "name":"Christian",
+    "adresse":"Bahnhofstraße 47, 23758 Oldenburg"
+},
+{
+    "lnr":5,
+    "name":"Torben",
+    "adresse":"Bahnhofstraße 15, 23758 Oldenburg"
+},
+{
+    "lnr":6,
+    "name":"Jakob",
+    "adresse":"Bahnhofstraße 11, 23758 Oldenburg"
+}

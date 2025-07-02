@@ -1,0 +1,42 @@
+//db.Buch.insertOne(
+{ 
+    "id":1,
+    "autor":"Marc-Uwe Kling",
+    "titel":"Die Känguru Chroniken: Ansichten eines vorlauten Beuteltiers",
+    "verlag":"Ullstein-Verlag",
+}
+
+{ 
+    "id":2,
+    "autor":"Paul",
+    "titel":"Warum Bienen Fliegen können",
+    "verlag":"Paul-Verlag",
+}
+
+{ 
+    "id":3,
+    "autor":"Markus",
+    "titel":"How-To: Wie Baue ich einen Webserver",
+    "verlag":"Markus-Verlag",
+}
+
+{ 
+    "id":4,
+    "autor":"Leon",
+    "titel":"How-To: 100% in jeder Klausur bekommen",
+    "verlag":"Leon-Verlag",
+}
+
+{ 
+    "id":5,
+    "autor":"Lucy",
+    "titel":"How-To: Wie mache ich waffeln",
+    "verlag":"Lucy-Verlag",
+}
+
+{ 
+    "id":6,
+    "autor":"Maxi",
+    "titel":"How-To: Wie benutze ich eine Maus",
+    "verlag":"Maxi-Verlag",
+}
