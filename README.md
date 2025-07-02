@@ -12,3 +12,7 @@ In diesem Repository finden sich die Übungen zu Vorlesung Datenbanktheorie und 
 2. MongoDB: Aufgabenstellung zum Ansprechen von MongoDB
    - Verwendung von Maven (im Verzeichnis Mongo) wie oben beschrieben.
 
+3. Data-Warehouse und Stern-Schema
+   - Mongo Shell und Java, wie in der JDBC-Umgebung
+   - Definitionen für Gehaltszahlungen und die Sterschema-Definitionen im 
+     Directory `DataWareHouse`.

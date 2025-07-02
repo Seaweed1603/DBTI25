@@ -1,3 +1,4 @@
+SET foreign_key_checks = 0;
 
 -- Zeitdimension
 DROP TABLE IF EXISTS dim_zeit;
@@ -15,6 +16,7 @@ CREATE TABLE dim_zeit (
 DROP TABLE IF EXISTS dim_mitarbeiter;
 
 CREATE TABLE dim_mitarbeiter (
+  mitarbeiter_id INT AUTO_INCREMENT PRIMARY KEY
   -- hier bitte die Attributdefinitionen einsetzen
 );
 
@@ -30,3 +32,5 @@ CREATE TABLE fact_gehalt (
   FOREIGN KEY (mitarbeiter_id) REFERENCES dim_mitarbeiter(mitarbeiter_id),
   FOREIGN KEY (zeit_id) REFERENCES dim_zeit(zeit_id)
 );
+
+SET foreign_key_checks = 1;
