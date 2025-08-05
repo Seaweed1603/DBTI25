@@ -1,4 +1,4 @@
-//db.Leser.insertMany(
+db.Leser.insertMany([
 {
     "lnr":1,
     "name":"Friedrich Funke",
@@ -29,3 +29,4 @@
     "name":"Jakob",
     "adresse":"Bahnhofstraße 11, 23758 Oldenburg"
 }
+])

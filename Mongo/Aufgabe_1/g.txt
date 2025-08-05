@@ -1,0 +1,33 @@
+db.Leser.updateOne(
+  { lnr: 7 }, 
+  { 
+    $pull: { 
+      ausgeliehen: { invnr: 1 } 
+    } 
+  }
+)
+
+db.Leser.updateOne(
+  { lnr: 1 },
+  {
+    $push: {
+      ausgeliehen: {
+        invnr:           1,
+        titel:           "Die Känguru-Chroniken: Ansichten eines vorlauten Beuteltiers",
+        rueckgabedatum:  "02.07.2025"
+      }
+    }
+  }
+)
+
+
+
+
+
+
+Prüfen:
+
+db.Leser.find(
+  { lnr: { $in: [1,7] } },
+  { _id:0, lnr:1, name:1, ausgeliehen:1 }
+).pretty()

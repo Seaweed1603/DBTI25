@@ -1,0 +1,28 @@
+db.Entliehen.insertOne(
+{
+    "ivnr":1,
+    "lnr":1,
+    "rueckgabedatum":"02.07.2025"
+}
+)
+db.Entliehen.insertOne(
+{
+    "ivnr":2,
+    "lnr":1,
+    "rueckgabedatum":"08.07.2025"
+}
+)
+db.Entliehen.insertOne(
+{
+    "ivnr":4,
+    "lnr":1,
+    "rueckgabedatum":"03.07.2025"
+}
+)
+db.Entliehen.insertOne(
+{
+    "ivnr":4,
+    "lnr":2,
+    "rueckgabedatum":"01.07.2025"
+}
+)

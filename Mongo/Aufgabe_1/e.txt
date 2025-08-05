@@ -1,0 +1,26 @@
+Das entleihen wird mit einem db.Entliehen.insertOne() dargestellt, wobei das rückgabe Datum die Soll rückgabe
+dargestellt. Beim zurückgeben wird der eintrag einfach wieder gelöscht mit:
+
+db.Entliehen.deleteOne(), und simuliert das zurück geben.
+
+
+BSP:
+
+Ausleihen:
+
+db.Entliehen.insertOne({
+    "ivnr":1,
+    "lnr":1,
+    "rueckgabedatum":"02.09.2025"
+})
+
+zurückgeben:
+
+db.Entliehen.deleteOne({
+    "ivnr":1,
+    "lnr":1
+})
+
+prüfen mit:
+
+db.Entliehen.find({ lnr: 1 }).pretty()

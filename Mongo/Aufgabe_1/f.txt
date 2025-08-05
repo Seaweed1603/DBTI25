@@ -1,0 +1,30 @@
+db.Leser.insertOne({
+  "lnr": 7,
+  "name": "Heinz Müller",
+  "adresse": "Klopstockweg 17, 38124 Braunschweig",
+  "ausgeliehen": [
+    {
+      "invnr": 1,
+      "titel": "Die Känguru-Chroniken: Ansichten eines vorlauten Beuteltiers",
+      "rueckgabedatum": "08.08.2025"
+    },
+    {
+      "invnr": 4,
+      "titel": "Der König von Berlin",
+      "rueckgabedatum": "08.08.2025"
+    }
+  ]
+})
+
+
+
+Pro:
+
+Entliehene Bücher sind im Leser gespeichert und keine Joins notwendig.
+Einfacheres Modell und weniger Collections.
+
+Contra:
+
+Redundante Daten.
+Mangelnde Konsistenz prüfung.
+Schwierig Statistiken zu erstellen (aggregation).
