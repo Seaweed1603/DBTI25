@@ -28,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * 
  * 
  */
-public class CRUDclientTest {
+public class MongoJavaTest {
     private static MongoClient client;
     private static MongoDatabase db;
     private MongoCollection<Document> buch;

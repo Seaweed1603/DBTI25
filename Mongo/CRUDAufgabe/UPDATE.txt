@@ -1,0 +1,13 @@
+db.abteilungen.updateMany(
+  {},
+  {
+    $set: {
+      "personal.$[person].gehalt": 3329.7
+    }
+  },
+  {
+    arrayFilters: [
+      { "person.gehalt": 3027 }
+    ]
+  }
+)

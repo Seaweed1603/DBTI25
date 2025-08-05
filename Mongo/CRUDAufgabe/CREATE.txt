@@ -1,0 +1,16 @@
+db.abteilungen.updateOne(
+  { name: "Produktion" },
+  {
+    $push: {
+      personal: {
+        persnr: 417,
+        name: "Krause",
+        vorname: "Henrik",
+        gehalt: 3027, // Gehaltsstufen wurden entfernt im verschachtelten Design
+        praemien: 0,
+        krankenkasse: "tkk",
+        kinder: []
+      }
+    }
+  }
+)

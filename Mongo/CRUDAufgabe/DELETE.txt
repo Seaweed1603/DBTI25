@@ -1,0 +1,8 @@
+db.abteilungen.updateMany(
+  {},
+  {
+    $pull: {
+      personal: { name: "Tietze", vorname: "Lutz" }
+    }
+  }
+)

@@ -1,0 +1,37 @@
+db.abteilungen.find(
+  { name: "Verkauf" },
+  { _id: 0, personal: 1 }
+).pretty()
+
+
+
+
+firma_mongo> db.abteilungen.find(
+...   { name: "Verkauf" },
+...   { _id: 0, personal: 1 }
+... ).pretty()
+... ;
+[
+  {
+    personal: [
+      {
+        persnr: 127,
+        name: 'Ehlert',
+        vorname: 'Siegfried',
+        krankenkasse: 'kkh',
+        gehalt: 2523,
+        praemien: 300,
+        kinder: []
+      },
+      {
+        persnr: 159,
+        name: 'Osswald',
+        vorname: 'Petra',
+        krankenkasse: 'bak',
+        gehalt: 2873,
+        praemien: 0,
+        kinder: []
+      }
+    ]
+  }
+]

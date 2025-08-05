@@ -1,0 +1,19 @@
+db.abteilungen.find({}, { _id: 0, name: 1, personal: 1 }).pretty()
+
+
+oder
+
+
+db.abteilungen.aggregate([
+  { $unwind: "$personal" },
+  {
+    $project: {
+      _id: 0,
+      abteilung: "$name",
+      persnr: "$personal.pnr",
+      name: "$personal.name",
+      vorname: "$personal.vorname",
+      krankenkasse: "$personal.krankenkasse"
+    }
+  }
+]).pretty()
