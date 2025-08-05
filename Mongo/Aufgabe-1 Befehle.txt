@@ -1,8 +1,0 @@
-
-// 1b
-db.Buch.find({"autor":"Marc-Uwe Kling"})
-
-// 1c
-db.Buch.countDocuments()
-
-// 1d
